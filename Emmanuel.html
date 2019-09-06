@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+            <title>Emmanuel's CV page</title>
+            
+            <script type="text/javascript">
+            
+                function validate_form ()
+            {    
+                valid = true;
+                if ( document.contact_form.contact_name.value =="")
+                {
+                    alert ("please fill in the 'name' box");
+                    valid = false;
+                }
+
+                return valid;
+            }
+            //-->    
+
+            </script>
+            
+            <link rel="stylesheet" href="css/styles.css">
+            
+            <style>
+            /* internal css */
+           
+            h3 {
+                color: goldenrod;
+            }
+        /* multiple selectors */ 
+          #education, #work-experience, #special-skills{
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color:aquamarine
+        }
+          #education, #interests, #abilities {background-color: gray }
+          #bio {
+              color:mediumvioletred
+          }
+            </style>
+    </head>
+    
+    <body>
+    <P>   
+    <CENTER><h1>EMMANUEL JOSEPH ETIM</h1></CENTER>
+    <STRONG><CENTER><h2>22 JOHNSON STREET UYO, AKWAIBOM STATE</h2></CENTER></STRONG>
+<STRONG><div><CENTER>PHONE: 08160775466</CENTER></div></STRONG>
+<STRONG><CENTER>E-MAIL:immanueletim1@gmail.com</CENTER></STRONG>
+<STRONG><center>LINKEDIN: EMMANUEL ETIM</center><STRONG></STRONG>
+    </P>
+    <div id="bio"><CENTER><sTRONG><i>An enthusiastic individual seeking an opportunity to develop my self and others
+    </i></sTRONG></CENTER></div>
+        <div id="bio"><center><strong><em>
+                by utilizing organizational and communication skills developed as an intern and full time
+                
+                            staff at various prestigious organizations
+                
+                </em></stro ng></center></div>
+                <div id="education">
+                <p><h3><strong>EDUCATION</strong></h3></p>
+                <P id>University of uyo</P>
+                <P>2014-2020(Expected) B.Eng in Food Engineering</P>
+                <p>2012-2014 OND in Enviromental Health Management (Suma Cum Laude)</p>
+                <p>pappers: Role of currency notes in the transmission of Nosocmial Infections</p>
+                        <p> Parasitic activities that occur post mortem in fish products</p>
+                2006-2012 Assemblies of God High School 
+                 </div>
+                <div id="work-experience">
+                <p><h3>WORK EXPERIENCE</h3></p>       
+                <P>Intern as an assistant Production Manager BlueSeal co. Uyo Akwa-ibom State</P>
+                <p>March 2018-September 2018</p>
+                <p>3D/CAD Animation Artist at Creative Studios, Lagos</p>
+                </div>
+                <div id="interests">
+                <h3>INTERESTS</h3>
+                <P>Community service and charity</P>
+                <p>plan annual outreaches and visits to orphanages and remand centres in Uyo and its Environs</p>
+                </div>
+                <div id="special-skills">
+                <P><h3>SPECIAL SKILLS</h3></P>
+                <p>Highly skilled in the use of computers an the internet, including microsoft office, targeted internet searches and trouble shooting computer hardware.</p>
+                <p>Fast assimilation of and adherence to details </p>
+                <p>Experience in teaching and organizational behaviourat daylight School</p>
+                <p>intermedia  te level of proficiency in HTML and CSS</p>
+                </div>
+                <div id="abilities">
+                <p><h3>ABILITIES</h3></p>
+                <P>Critical Thinking</P>
+                <P>Excellent human relations</P>
+                <p>Ability to work and deliver under pressure</p>
+                </div>
+                <p><em><strong>Attached here for your perusal is my passport photograph</strong></em></p>
+<div></div>
+<a href="#" name="send" value="send Details" id="button" class="button">click here to contact me</a>
+</-- modal Section --->
+<div class="bg-modal">
+  <div class="modal-content">
+
+    <div class="close">+</div>
+      <img src="cpe5 (2).jpg" alt="">
+       
+      <form name= "contact_form" action="" id="myform">
+
+      <input name= "contact_name" id="input-name" type="text" placeholder="Name" onkeyup="lettersOnly(this)">
+      <input id="input-email" type="text" placeholder="E-mail" onekeyup="let">
+      <input id="input-title" type="text" placeholder="Title">
+      <input id="input-message " type="text" placeholder="Type message">
+      <a href="" class="buttons">submit</a>
+  </div>
+ </form>
+
+ <script>
+ function lettersOnly(input) {
+     var regex = /[^a-z]/gi;
+     input.value = input.value.replace(regex, "")
+
+ }
+ </script>
+ 
+</div>
+<script src="js/startng.js">
+</script>
+</body>
+</html>
